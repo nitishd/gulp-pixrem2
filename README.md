@@ -1,13 +1,15 @@
-# gulp-pixrem [![NPM version](https://badge.fury.io/js/gulp-pixrem.png)](http://badge.fury.io/js/gulp-pixrem) [![Build Status](https://travis-ci.org/gummesson/gulp-pixrem.png?branch=master)](https://travis-ci.org/gummesson/gulp-pixrem)
+# gulp-pixrem2 [![NPM version](https://badge.fury.io/js/gulp-pixrem2.png)](http://badge.fury.io/js/gulp-pixrem2) [![Build Status](https://travis-ci.org/nitishd/gulp-pixrem2.png?branch=master)](https://travis-ci.org/nitishd/gulp-pixrem2) [![Coverage Status](https://coveralls.io/repos/github/nitishd/gulp-pixrem2/badge.svg)](https://coveralls.io/github/nitishd/gulp-pixrem2)
 
 > [Pixrem](https://github.com/robwierzbowski/node-pixrem) – A CSS post-processor that generates pixel fallbacks for rem units.
+
+This is an updated version of [gulp-pixrem](https://www.npmjs.com/package/gulp-pixrem) with deprecated code removed .
 
 Issues with the output should be reported on the [Pixrem](https://github.com/robwierzbowski/node-pixrem) issue tracker.
 
 ## Installation
 
 ~~~ shell
-npm install gulp-pixrem --save-dev
+npm install gulp-pixrem2 --save-dev
 ~~~
 
 ## Usage
@@ -18,7 +20,7 @@ For usage and options, refer to the official [Pixrem](https://github.com/robwier
 
 ~~~ javascript
 var gulp = require('gulp');
-var pixrem = require('gulp-pixrem');
+var pixrem = require('gulp-pixrem2');
 
 gulp.task('css', function() {
   gulp.src('css/style.css')
@@ -47,6 +49,7 @@ gulp.task('css', function() {
 The MIT License (MIT)
 
 Copyright (c) 2014 Ellen Gummesson
+Copyright (c) 2019 Nitish Kumar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

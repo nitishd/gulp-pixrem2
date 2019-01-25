@@ -1,16 +1,16 @@
 /* Modules */
 
 var assert     = require('assert');
-var gutil      = require('gulp-util');
+var vinyl      = require('vinyl');
 var sourcemaps = require('gulp-sourcemaps');
 var pixrem     = require('./');
 
 /* Helpers */
 
-var regex = /sourceMappingURL=data:application\/json;base64/;
+var regex = /sourceMappingURL=data:application\/json;charset=utf8;base64/;
 
 function fixture(content) {
-  var file = new gutil.File({
+  var file = new vinyl({
     contents: new Buffer(content),
     cwd: __dirname,
     base: __dirname,
@@ -22,7 +22,7 @@ function fixture(content) {
 
 /* Tests */
 
-describe('gulp-pixrem', function() {
+describe('gulp-pixrem2', function() {
   it('should postprocess CSS using Pixrem with the default pixel root value', function(done) {
     var stream = pixrem();
 

@@ -1,6 +1,6 @@
 /* Modules */
 
-var gutil          = require('gulp-util');
+var pluginError    = require('plugin-error');
 var assign         = require('object-assign');
 var applySourceMap = require('vinyl-sourcemaps-apply');
 var through        = require('through2');
@@ -21,7 +21,7 @@ module.exports = function(options) {
     }
 
     if (file.isStream()) {
-      this.emit('error', new gutil.PluginError('gulp-pixrem', 'Streaming not supported'));
+      this.emit('error', new pluginError('gulp-pixrem2', 'Streaming not supported'));
       return done();
     }
 
@@ -42,7 +42,7 @@ module.exports = function(options) {
       }
 
     } catch (err) {
-      this.emit('error', new gutil.PluginError('gulp-pixrem', err));
+      this.emit('error', new pluginError('gulp-pixrem2', err));
     }
 
     this.push(file);

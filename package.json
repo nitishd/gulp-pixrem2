@@ -1,6 +1,6 @@
 {
-  "name": "gulp-pixrem",
-  "version": "1.0.0",
+  "name": "gulp-pixrem2",
+  "version": "2.0.0",
   "description": "Pixrem plugin for gulp.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gummesson/gulp-pixrem.git"
+    "url": "https://github.com/nitishd/gulp-pixrem2.git"
   },
   "keywords": [
     "css",
@@ -16,22 +16,23 @@
     "postproccessor",
     "gulpplugin"
   ],
-  "author": "Ellen Gummesson",
+  "author": "Nitish Kumar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gummesson/gulp-pixrem/issues"
+    "url": "https://github.com/nitishd/gulp-pixrem2/issues"
   },
-  "homepage": "https://github.com/gummesson/gulp-pixrem",
+  "homepage": "https://github.com/nitishd/gulp-pixrem2",
   "dependencies": {
-    "gulp-util": "~3.0.6",
-    "object-assign": "^4.0.1",
-    "pixrem": "~3.0.0",
-    "postcss": "^5.0.8",
-    "through2": "~2.0.0",
-    "vinyl-sourcemaps-apply": "^0.1.4"
+    "plugin-error": "~1.0.1",
+    "object-assign": "^4.1.1",
+    "pixrem": "~5.0.0",
+    "postcss": "^7.0.14",
+    "through2": "~3.0.0",
+    "vinyl": "^2.2.0",
+    "vinyl-sourcemaps-apply": "^0.2.1"
   },
   "devDependencies": {
-    "gulp-sourcemaps": "^1.5.2",
+    "gulp-sourcemaps": "^2.6.4",
     "mocha": "*"
   }
 }
